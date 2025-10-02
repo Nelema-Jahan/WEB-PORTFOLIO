@@ -11,10 +11,22 @@
   <style>
     body {
       font-family: 'Poppins', sans-serif;
-      background-color: #000;  /* Black background */
-      color: #fff;             /* White text */
+      background-color: #000;  
+      color: #fff;            
       margin: 0;
       padding: 0;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: #111;
+    }
+    .navbar a {
+      color: #0ff !important;
+      font-weight: 500;
+    }
+    .navbar a:hover {
+      text-shadow: 0 0 10px #0ff;
     }
 
     /* Hero Section */
@@ -75,6 +87,24 @@
       box-shadow: 0 0 20px #0ff;
     }
 
+    /* Skills */
+    .skill-badge {
+      display: inline-block;
+      background: #111;
+      border: 1px solid #0ff;
+      padding: 10px 20px;
+      margin: 8px;
+      border-radius: 30px;
+      font-weight: 500;
+      color: #0ff;
+      transition: 0.3s;
+    }
+    .skill-badge:hover {
+      background: #0ff;
+      color: #000;
+      box-shadow: 0 0 15px #0ff;
+    }
+
     /* Contact */
     .form-control {
       background: #111;
@@ -95,9 +125,33 @@
       background: #111;
       color: #777;
     }
+    footer a {
+      color: #0ff;
+      margin: 0 10px;
+      font-size: 1.2rem;
+    }
   </style>
 </head>
 <body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand text-info fw-bold" href="#">Nelema Jahan</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon bg-info"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
   <!-- Hero -->
   <section class="hero">
@@ -114,6 +168,47 @@
         I’m <strong>Nelema Jahan</strong>, an aspiring Software Engineer passionate about building creative, responsive, and user-friendly applications.
         I love solving problems with clean code and modern technologies.
       </p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" data-aos="fade-up">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="text-center">
+        <span class="skill-badge">HTML</span>
+        <span class="skill-badge">CSS</span>
+        <span class="skill-badge">JavaScript</span>
+        <span class="skill-badge">Bootstrap</span>
+        <span class="skill-badge">React</span>
+        <span class="skill-badge">Node.js</span>
+        <span class="skill-badge">C++</span>
+        <span class="skill-badge">Java</span>
+        <span class="skill-badge">Git & GitHub</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" data-aos="fade-up">
+    <div class="container">
+      <h2>Experience & Education</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <h4 class="text-info">Education</h4>
+          <ul>
+            <li><strong>BSc in Software Engineering</strong> - Ongoing</li>
+            <li>Completed various programming courses (C++, Java, Web Development)</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h4 class="text-info">Experience</h4>
+          <ul>
+            <li>Built multiple academic projects in Java, C++, and Web Development</li>
+            <li>Worked on cryptography, operating system algorithms, and 3D visual projects</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -166,6 +261,11 @@
   <!-- Footer -->
   <footer>
     <p>© 2025 Nelema Jahan | Aspiring Software Engineer</p>
+    <div>
+      <a href="https://github.com/your-username" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/your-profile" target="_blank">LinkedIn</a>
+      <a href="mailto:youremail@example.com">Email</a>
+    </div>
   </footer>
 
   <!-- Scripts -->
